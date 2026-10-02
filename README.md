@@ -1,7 +1,11 @@
 # QuickCast MCP (Screen-to-Action Protocol)
 
+[![npm version](https://img.shields.io/npm/v/quickcast-mcp.svg?color=c084fc)](https://www.npmjs.com/package/quickcast-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Node.js](https://img.shields.io/badge/Node.js-20%2B-green.svg)](https://nodejs.org)
+
 > **Autonomous AI Protocol for Screen Recordings**  
-> Turn screen recordings directly into structured GitHub bug reports with video timestamps, executable Playwright E2E tests, and Standard Operating Procedure (SOP) documentation.
+> Turn screen recordings directly into structured GitHub bug reports with clickable video timestamps, executable Playwright E2E tests, and Standard Operating Procedure (SOP) documentation.
 
 Part of the **QuickCast Screen-Recorder** & **Watermark & Resize Studio** ecosystem.
 
@@ -18,7 +22,9 @@ Part of the **QuickCast Screen-Recorder** & **Watermark & Resize Studio** ecosys
 
 ---
 
-## 📦 Installation & Setup
+## 📦 Instant Setup (Claude Desktop & Cursor)
+
+Because `quickcast-mcp` is published on [npm](https://www.npmjs.com/package/quickcast-mcp), you can run it instantly with **zero local file cloning**:
 
 ### 1. Claude Desktop Configuration
 
@@ -31,10 +37,8 @@ Add the following to your `claude_desktop_config.json`:
 {
   "mcpServers": {
     "quickcast": {
-      "command": "node",
-      "args": [
-        "C:\\Users\\Milmann\\.gemini\\antigravity\\scratch\\quickcast-mcp\\src\\index.js"
-      ]
+      "command": "npx",
+      "args": ["-y", "quickcast-mcp"]
     }
   }
 }
@@ -42,19 +46,23 @@ Add the following to your `claude_desktop_config.json`:
 
 ### 2. Cursor Configuration
 
-Add to your project's `.cursor/mcp.json` or global Cursor MCP Settings:
+Add to your project's `.cursor/mcp.json` or Cursor MCP Settings:
 
 ```json
 {
   "mcpServers": {
     "quickcast": {
-      "command": "node",
-      "args": [
-        "C:\\Users\\Milmann\\.gemini\\antigravity\\scratch\\quickcast-mcp\\src\\index.js"
-      ]
+      "command": "npx",
+      "args": ["-y", "quickcast-mcp"]
     }
   }
 }
+```
+
+### 3. Smithery 1-Click Install
+
+```bash
+npx -y @smithery/cli install quickcast-mcp --client claude
 ```
 
 ---
