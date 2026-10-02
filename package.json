@@ -1,0 +1,47 @@
+{
+  "name": "quickcast-mcp",
+  "version": "1.0.0",
+  "description": "High-performance Model Context Protocol (MCP) server for QuickCast Screen-to-Action Protocol: automated bug reporting, Playwright E2E test scaffolding, and SOP generation from QuickCast recordings.",
+  "main": "src/index.js",
+  "bin": {
+    "quickcast-mcp": "src/index.js"
+  },
+  "type": "module",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/test_mcp.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "quickcast",
+    "screen-recorder",
+    "screen-to-action",
+    "playwright",
+    "e2e-testing",
+    "bug-reporting",
+    "sop-generator",
+    "claude-desktop",
+    "cursor"
+  ],
+  "author": "QuickCast Team (https://watermarkresizestudio.com)",
+  "license": "MIT",
+  "homepage": "https://watermarkresizestudio.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miladmet/quickcast-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Miladmet/quickcast-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "zod": "^3.25.76"
+  }
+}
