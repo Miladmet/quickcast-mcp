@@ -1,6 +1,7 @@
 # QuickCast MCP (Screen-to-Action Protocol)
 
 [![npm version](https://img.shields.io/npm/v/quickcast-mcp.svg?color=c084fc)](https://www.npmjs.com/package/quickcast-mcp)
+[![Glama MCP](https://glama.ai/mcp/servers/Miladmet/quickcast-mcp/badges/score.svg)](https://glama.ai/mcp/servers/Miladmet/quickcast-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-20%2B-green.svg)](https://nodejs.org)
 
