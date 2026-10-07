@@ -66,6 +66,10 @@ Add to your project's `.cursor/mcp.json` or Cursor MCP Settings:
 npx -y @smithery/cli install quickcast-mcp --client claude
 ```
 
+### 4. AI Agent Skill (`SKILL.md`)
+
+QuickCast MCP is packaged with an autonomous [`SKILL.md`](./SKILL.md) specification compatible with **Claude Code, Cursor, Windsurf, GitHub Copilot, and Agensi.io**. It teaches your AI agent how to automatically invoke QuickCast tools to turn recording sessions into tests, bug reports, and SOPs.
+
 ---
 
 ## 🛠️ MCP Tools Reference
@@ -86,6 +90,13 @@ npx -y @smithery/cli install quickcast-mcp --client claude
 * **100% Client-Side & Local**: Runs as a local `stdio` server on your machine.
 * **Zero Cloud Costs**: Uses your existing Cloudflare R2 links or local recording files. No external AI API keys or third-party cloud brokers required.
 * **Decoupled Architecture**: Strictly isolated from extension recording engines and web apps.
+
+---
+
+## 🌐 Managed QA & Automation Services
+
+Need a dedicated, automated Playwright regression testing suite and daily CI monitoring built for your web application?
+Visit **[Watermark & Resize Studio QA Automation](https://watermarkresizestudio.com/qa-automation/)** for turnkey Testing as a Service (TaaS).
 
 ---
 
