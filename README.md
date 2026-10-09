@@ -1,6 +1,7 @@
 # QuickCast MCP (Screen-to-Action Protocol)
 
 [![npm version](https://img.shields.io/npm/v/quickcast-mcp.svg?color=c084fc)](https://www.npmjs.com/package/quickcast-mcp)
+[![Agensi Skill](https://img.shields.io/badge/Agensi-Live%20Skill-6366f1.svg)](https://www.agensi.io/skills/quickcast-qa-assistant)
 [![Glama MCP](https://glama.ai/mcp/servers/Miladmet/quickcast-mcp/badges/score.svg)](https://glama.ai/mcp/servers/Miladmet/quickcast-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-20%2B-green.svg)](https://nodejs.org)
@@ -68,7 +69,7 @@ npx -y @smithery/cli install quickcast-mcp --client claude
 
 ### 4. AI Agent Skill (`SKILL.md`)
 
-QuickCast MCP is packaged with an autonomous [`SKILL.md`](./SKILL.md) specification compatible with **Claude Code, Cursor, Windsurf, GitHub Copilot, and Agensi.io**. It teaches your AI agent how to automatically invoke QuickCast tools to turn recording sessions into tests, bug reports, and SOPs.
+QuickCast MCP is officially published as a verified skill on **[Agensi.io](https://www.agensi.io/skills/quickcast-qa-assistant)** and is packaged with an autonomous [`SKILL.md`](./SKILL.md) specification compatible with **Claude Code, Cursor, Windsurf, OpenClaw, and GitHub Copilot**. It teaches your AI agent how to automatically invoke QuickCast tools to turn recording sessions into tests, bug reports, and SOPs.
 
 ---
 
