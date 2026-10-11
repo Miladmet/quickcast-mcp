@@ -1,8 +1,9 @@
 {
   "name": "quickcast-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "High-performance Model Context Protocol (MCP) server for QuickCast Screen-to-Action Protocol: automated bug reporting, Playwright E2E test scaffolding, and SOP generation from QuickCast recordings.",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "bin": {
     "quickcast-mcp": "src/index.js"
   },

@@ -22,7 +22,7 @@ export function formatTime(seconds = 0) {
  * Searches candidate locations to locate QuickCast sessions.
  */
 export function resolveSessionFile(customPath) {
-  if (customPath && fs.existsSync(customPath)) {
+  if (customPath) {
     return customPath;
   }
 
@@ -123,7 +123,11 @@ export function getLatestSession(params = {}) {
   }
 
   if (sessions.length > 0) {
-    return sessions[0];
+    const s = sessions[0];
+    return {
+      ...s,
+      markers: Array.isArray(s.markers) ? s.markers : [],
+    };
   }
 
   // Graceful fallback template when no recordings are registered yet

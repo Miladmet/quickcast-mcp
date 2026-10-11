@@ -20,9 +20,9 @@ assert.strictEqual(formatTime(3600), '60:00');
 console.log('✅ 1. Time formatting tests passed.');
 
 // 2. Test getLatestSession fallback template
-const fallback = getLatestSession({});
+const fallback = getLatestSession({ session_file: './nonexistent-session.json' });
 assert.ok(fallback.sessionId);
-assert.ok(fallback.markers.length > 0);
+assert.ok(Array.isArray(fallback.markers) && fallback.markers.length > 0);
 console.log('✅ 2. Fallback session template verified.');
 
 // 3. Test Ingest / Save session
